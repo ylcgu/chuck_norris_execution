@@ -14,11 +14,11 @@ app.css.append_css({"external_url": "https://codepen.io/chriddyp/pen/bWLwgP.css"
 
 ####### Layout of the app ########
 app.layout = html.Div([
-    html.H2('Chuck Norris execution method'),
+    html.H2('What should I eat tongiht'),
     dcc.Dropdown(
         id='dropdown',
-        options=[{'label': i, 'value': i} for i in ['round-house kick to the face', 'punch', 'body-slam']],
-        value='punch'
+        options=[{'label': i, 'value': i} for i in ['Sushi', 'Tofu', 'Taco']],
+        value='Sushi'
     ),
     html.Div(id='display-value')
 ])
